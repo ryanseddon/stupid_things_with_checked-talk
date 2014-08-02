@@ -1,0 +1,93 @@
+/* Awesome radios */
+
+.omgwtfbbq input {
+  display: none;
+}
+.omgwtfbbq input + label:after {
+ padding-left: 30px;
+ clear: both;
+ float: left;
+ display: block;
+ color: #fff;
+ text-shadow: 1px 5px 10px hsl(0,10%,40%);
+ content: attr(data-content);
+ text-indent: 0;
+ white-space: nowrap;
+ font-size: 40px;
+}
+
+.omgwtfbbq input + label {
+ display: block;
+ margin: 10px;
+ width: 50px;
+ height: 50px;
+ cursor: pointer;
+ vertical-align: middle;
+ background-color: rgba(51, 51, 51, 0.8);
+ background-repeat: no-repeat;
+ text-indent: -9999px;
+ white-space: nowrap;
+ font-size: 0;
+ border: 2px solid #fff;
+ 
+ background-image: -webkit-radial-gradient(hsla(200, 100%, 90%, 1) 0%, hsla(200, 100%, 70%, 1) 15%, hsla(200, 100%, 60%, 0.3) 28%, hsla(200, 100%, 30%, 0) 70%);
+ background-image: -moz-radial-gradient(hsla(200, 100%, 90%, 1) 0%, hsla(200, 100%, 70%, 1) 15%, hsla(200, 100%, 60%, 0.3) 28%, hsla(200, 100%, 30%, 0) 70%);
+ background-image: -o-radial-gradient(hsla(200, 100%, 90%, 1) 0%, hsla(200, 100%, 70%, 1) 15%, hsla(200, 100%, 60%, 0.3) 28%, hsla(200, 100%, 30%, 0) 70%);
+ background-image: radial-gradient(hsla(200, 100%, 90%, 1) 0%, hsla(200, 100%, 70%, 1) 15%, hsla(200, 100%, 60%, 0.3) 28%, hsla(200, 100%, 30%, 0) 70%);
+   
+ -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+         border-radius: 25px; 
+   
+ -webkit-box-shadow: hsla(0, 0%, 100%, 0.15) 0 1px 1px, inset hsla(0, 0%, 0%, 0.5) 0 0 0 1px;
+   -moz-box-shadow: hsla(0, 0%, 100%, 0.15) 0 1px 1px, inset hsla(0, 0%, 0%, 0.5) 0 0 0 1px;
+     box-shadow: hsla(0, 0%, 100%, 0.15) 0 1px 1px, inset hsla(0, 0%, 0%, 0.5) 0 0 0 1px;
+   
+ -webkit-transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1);
+   -moz-transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1);
+   -o-transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1);
+     transition: background-position 0.15s cubic-bezier(0.8, 0, 1, 1);
+}
+
+
+/* The up/down direction logic */
+
+.omgwtfbbq input + label {
+ background-position: 0 50px;
+}
+.omgwtfbbq input:checked + label {
+ background-position: 0 0;
+}
+.omgwtfbbq input:checked ~ input + label {
+ background-position: 0 -50px;
+}
+
+
+/* horizontal direction logic */
+
+.omgwtfbbq.horizontal input + label {
+ display: inline-block;
+}
+.omgwtfbbq.horizontal input + label:after {
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -o-transform: rotate(90deg);
+ transform: rotate(90deg);
+ 
+ -webkit-transform-origin: 30px 18px;
+    -moz-transform-origin: 30px 18px;
+     -ms-transform-origin: 30px 18px;
+      -o-transform-origin: 30px 18px;
+         transform-origin: 30px 18px;
+}
+
+.omgwtfbbq.horizontal input + label {
+ background-position: 50px 0;
+}
+.horizontal input:checked + label {
+ background-position: 0 0;
+}
+.horizontal input:checked ~ input + label {
+ background-position: -50px 0;
+}

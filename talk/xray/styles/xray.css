@@ -1,0 +1,154 @@
+body {
+  padding: 20px;
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.btn-group {
+  width: 50%;
+  float: left;
+}
+
+#xray {
+  opacity: 1;
+  position: static;
+  /* Opera stills show an outline if not hidden */
+  visibility: visible;
+}
+#xray + label {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.xray-container {
+  border: 1px solid #000;
+  padding: 20px;
+  position: relative;
+}
+
+.xray-container,
+.xray-container *:not(label) {
+  -webkit-transition: 1s ease;
+     -moz-transition: 1s ease;
+      -ms-transition: 1s ease;
+       -o-transition: 1s ease;
+          transition: 1s ease;
+}
+
+#xray:checked ~ .xray-container {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+#xray:checked ~ .xray-container input {
+  opacity: 1;
+  z-index: 1;
+  visibility: visible;
+  -webkit-transform: translate(0,-20px);
+     -moz-transform: translate(0,-20px);
+      -ms-transform: translate(0,-20px);
+       -o-transform: translate(0,-20px);
+          transform: translate(0,-20px);
+}
+
+#xray:checked ~ .xray-container label:before {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 10px;
+  width: 1px;
+  height: 18px;
+  border-left: 1px solid #000;
+}
+
+#xray:checked ~ .xray-container label:after {
+  content: "<label for='" attr(for) "'>";
+  position: absolute;
+  color: #000;
+  bottom: -80px;
+  left: 10px;
+}
+
+#xray:checked ~ .xray-container label[class*="dismiss"]:after {
+  display: none;
+}
+
+/* Changes for some demos */
+
+#xray:checked ~ #dropdowns label:before,
+#xray:checked ~ #collapse label:before,
+#xray:checked ~ #carousel label:before,
+#xray:checked ~ #carousel label:after {
+  display: none;
+}
+#xray:checked ~ #dropdowns label:not(.dismiss-dropdowns):after {
+  -webkit-transform: rotate(70deg);
+     -moz-transform: rotate(70deg);
+      -ms-transform: rotate(70deg);
+       -o-transform: rotate(70deg);
+          transform: rotate(70deg);
+  
+  left: -30px;
+  white-space: nowrap;
+}
+
+#xray:checked ~ #collapse label:not(.accordion-dismiss):after {
+  position: static;
+  margin: 0 0 0 20px;
+}
+
+#xray:checked ~ #carousel input:nth-child(2) {
+  -webkit-transform: translate(20px,-20px);
+     -moz-transform: translate(20px,-20px);
+      -ms-transform: translate(20px,-20px);
+       -o-transform: translate(20px,-20px);
+          transform: translate(20px,-20px);
+}
+#xray:checked ~ #carousel input:nth-child(3) {
+  -webkit-transform: translate(40px,-20px);
+     -moz-transform: translate(40px,-20px);
+      -ms-transform: translate(40px,-20px);
+       -o-transform: translate(40px,-20px);
+          transform: translate(40px,-20px);
+}
+#xray:checked ~ #carousel input:nth-child(4) {
+  -webkit-transform: translate(60px,-20px);
+     -moz-transform: translate(60px,-20px);
+      -ms-transform: translate(60px,-20px);
+       -o-transform: translate(60px,-20px);
+          transform: translate(60px,-20px);
+}
+#xray:checked ~ #carousel input:nth-child(5) {
+  -webkit-transform: translate(80px,-20px);
+     -moz-transform: translate(80px,-20px);
+      -ms-transform: translate(80px,-20px);
+       -o-transform: translate(80px,-20px);
+          transform: translate(80px,-20px);
+}
+
+#xray:checked ~ .xray-container label:nth-of-type(2):after {
+  bottom: -60px;
+}
+#xray:checked ~ .xray-container label:nth-of-type(3):after {
+  bottom: -40px;
+}
+
+#xray:checked ~ .xray-container label:nth-of-type(1):before {
+  height: 58px;
+  bottom: -62px;
+}
+#xray:checked ~ .xray-container label:nth-of-type(2):before {
+  height: 38px;
+  bottom: -42px;
+}

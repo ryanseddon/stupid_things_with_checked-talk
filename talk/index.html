@@ -1,0 +1,435 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Building stupid things with :checked | MelbCSS</title>
+    <meta name="description" content="Do crazy things with the :checked pseudo-class, melbourne CSS meetup">
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../dist/slideshowbob.min.css">
+    <link rel="stylesheet" href="css/theme.cssconf.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/syntax.css">
+    <link href="xray/styles/bootleg-core.css" rel="stylesheet">
+    <link href="xray/styles/bootleg-modal.css" rel="stylesheet">
+    <style>
+      .debug .slideshowbob > input[type="radio"] {
+        position: relative;
+        opacity: 1;
+        top: 0;
+        z-index: 3;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+        <div class="slideshowbob">
+          <input type="radio" checked autofocus id="slideshowbob1" name="slider">
+          <input type="radio" id="slideshowbob2" name="slider">
+          <input type="radio" id="slideshowbob3" name="slider">
+          <input type="radio" id="slideshowbob4" name="slider">
+          <input type="radio" id="slideshowbob5" name="slider">
+          <input type="radio" id="slideshowbob6" name="slider">
+          <input type="radio" id="slideshowbob7" name="slider">
+          <input type="radio" id="slideshowbob8" name="slider">
+          <input type="radio" id="slideshowbob9" name="slider">
+          <input type="radio" id="slideshowbob10" name="slider">
+          <input type="radio" id="slideshowbob11" name="slider">
+          <input type="radio" id="slideshowbob12" name="slider">
+          <input type="radio" id="slideshowbob13" name="slider">
+          <input type="radio" id="slideshowbob14" name="slider">
+          <input type="radio" id="slideshowbob15" name="slider">
+          <input type="radio" id="slideshowbob16" name="slider">
+          <input type="radio" id="slideshowbob17" name="slider">
+          <input type="radio" id="slideshowbob18" name="slider">
+          <input type="radio" id="slideshowbob19" name="slider">
+          <input type="radio" id="slideshowbob20" name="slider">
+          <input type="radio" id="slideshowbob21" name="slider">
+          <input type="radio" id="slideshowbob22" name="slider">
+          <input type="radio" id="slideshowbob23" name="slider">
+          <input type="radio" id="slideshowbob24" name="slider">
+          <input type="radio" id="slideshowbob25" name="slider">
+          <input type="radio" id="slideshowbob26" name="slider">
+          <input type="radio" id="slideshowbob27" name="slider">
+          <input type="radio" id="slideshowbob28" name="slider">
+          <input type="radio" id="slideshowbob29" name="slider">
+          <input type="radio" id="slideshowbob30" name="slider">
+          <input type="radio" name="slider" id="slideshowbob31">
+          <input type="radio" name="slider" id="slideshowbob32">
+          <input type="radio" name="slider" id="slideshowbob33">
+
+          <!-- Slide deck specific checkbox madness -->
+          <input id="sexy" class="customcheck" type="checkbox" />
+
+          <div class="slideshowbob__container">
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Building stupid things with :checked</h1>
+                <p>Ryan Seddon</p>
+              </div>
+            </div>
+
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>ME</h1>
+                <ul>
+                  <li><a href="https://twitter.com/ryanseddon">@ryanseddon</a></li>
+                  <li><a href="http://thecssninja.com/">thecssninja.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>The checkbox is pretty boring...</h1>
+                <p><input type="checkbox" id="boring"> <label for="boring">Agree to these terms to continue</label></p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Incorrect</h1>
+                <img src="img/incorrect.png" width="307" height="238" />
+              </div>
+            </div>
+            <div class="slideshowbob__slide hi5">
+              <div class="slideshowbob__slide__content">
+                <h1>
+                    <div class="bloodycheckbox"><label onclick for="sexy"></label></div>
+                    + :checked = <span class="animated">Awesome</span>
+                </h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Interaction without JavaScript</h1>
+                <p>Stateful CSS, makes for something unexpected be extremely powerful</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Custom Checkboxes/Radios</h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <div class="omgwtfbbq horizontal">
+
+                 <input type="radio" name="horz" id="horz1" checked /> <label for="horz1" onclick></label>
+
+                 <input type="radio" name="horz" id="horz2" /> <label for="horz2" onclick></label>
+
+                 <input type="radio" name="horz" id="horz3" /> <label for="horz3" onclick></label>
+
+                 <input type="radio" name="horz" id="horz4" /> <label for="horz4" onclick></label>
+
+                 <input type="radio" name="horz" id="horz5" /> <label for="horz5" onclick></label>
+
+                </div>
+                <p>Original demo by <a href="http://simurai.com/">Simurai</a></p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Quite easy</h1>
+<div class="syntax"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"opts"</span> <span class="na">id=</span><span class="s">"opts1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"opts1"</span><span class="nt">&gt;</span>Option<span class="nt">&lt;/label&gt;</span>
+</pre></div>
+              <p>Setup the styles to react to label clicks</p>
+<div class="syntax"><pre><span class="nt">input</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+ <span class="k">background-position</span><span class="o">:</span> <span class="m">50px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+ <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">input</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">input</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+ <span class="k">background-position</span><span class="o">:</span> <span class="m">-50px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Shiny dot</h1>
+<div class="syntax"><pre><span class="nt">input</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+    <span class="c">/* less interesting styles */</span>
+    <span class="k">background-image</span><span class="o">:</span> <span class="n">radial</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">hsla</span><span class="p">(</span><span class="m">200</span><span class="o">,</span> <span class="m">100</span><span class="o">%,</span> <span class="m">90</span><span class="o">%,</span> <span class="m">1</span><span class="p">)</span> <span class="m">0</span><span class="o">%,</span>
+                        <span class="n">hsla</span><span class="p">(</span><span class="m">200</span><span class="o">,</span> <span class="m">100</span><span class="o">%,</span> <span class="m">70</span><span class="o">%,</span> <span class="m">1</span><span class="p">)</span> <span class="m">15</span><span class="o">%,</span>
+                        <span class="n">hsla</span><span class="p">(</span><span class="m">200</span><span class="o">,</span> <span class="m">100</span><span class="o">%,</span> <span class="m">60</span><span class="o">%,</span> <span class="m">0</span><span class="o">.</span><span class="m">3</span><span class="p">)</span> <span class="m">28</span><span class="o">%,</span>
+                        <span class="n">hsla</span><span class="p">(</span><span class="m">200</span><span class="o">,</span> <span class="m">100</span><span class="o">%,</span> <span class="m">30</span><span class="o">%,</span> <span class="m">0</span><span class="p">)</span> <span class="m">70</span><span class="o">%</span><span class="p">);</span>
+    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">%,</span> <span class="m">100</span><span class="o">%,</span> <span class="m">0</span><span class="o">.</span><span class="m">15</span><span class="p">)</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">1px</span><span class="o">,</span>
+                <span class="k">inset</span> <span class="n">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">%,</span> <span class="m">0</span><span class="o">%,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">)</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">1px</span><span class="p">;</span>
+    <span class="n">transition</span><span class="o">:</span> <span class="k">background-position</span> <span class="m">0.15s</span> <span class="n">cubic</span><span class="o">-</span><span class="n">bezier</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">8</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">1</span><span class="o">,</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+             <div class="slideshowbob__slide__content">
+               <h1>Wrote an <a href="http://www.thecssninja.com/css/custom-inputs-using-css" target="_blank">article</a> about this technique</h1>
+             </div>
+            </div>
+
+            <!-- Tree menu -->
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                 <h1>Tree menu</h1>
+                 <h2>See <a href="http://www.thecssninja.com/demo/css_tree/" target="_blank">demo</a></h2>
+               </div>
+            </div>
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                 <h1>Tree markup</h1>
+<div class="syntax"><pre><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">checked</span> <span class="na">id=</span><span class="s">&quot;folder1&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">&quot;folder1&quot;</span> <span class="na">onclick</span><span class="nt">&gt;</span>Folder 1<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;ol&gt;</span>
+       <span class="nt">&lt;li&gt;</span>File<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  ... more items
+<span class="nt">&lt;/ol&gt;</span>
+</pre></div>
+               </div>
+             </div>
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                 <h1>CSS, heavily simplified</h1>
+<div class="syntax"><pre><span class="nc">.tree</span> <span class="nt">li</span> <span class="nt">input</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">ol</span> <span class="p">{</span>
+    <span class="k">height</span><span class="o">:</span> <span class="k">auto</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">35px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tree</span> <span class="nt">li</span> <span class="nt">label</span><span class="nd">:after</span><span class="o">,</span> <span class="nc">.tree</span> <span class="nt">li</span> <span class="nt">label</span><span class="nd">:before</span><span class="o">,</span>
+<span class="nc">.tree</span> <span class="nt">li</span> <span class="nt">input</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">ol</span><span class="nd">:before</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="sx">url(icon-sprite.png)</span> <span class="m">0</span> <span class="m">0</span> <span class="k">no-repeat</span><span class="p">;</span>
+    <span class="k">content</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+    <span class="k">width</span><span class="o">:</span> <span class="m">14px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.tree</span> <span class="nt">li</span> <span class="nt">input</span> <span class="o">~</span> <span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.tree</span> <span class="nt">li</span> <span class="nt">input</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+               </div>
+             </div>
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                 <h1>Wrote an <a href="http://www.thecssninja.com/css/css-tree-menu" target="_blank">article</a> on this too!</h1>
+               </div>
+             </div>
+            <!-- End: tree menu -->
+
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                 <h1>Snorefest</h1>
+               </div>
+             </div>
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                   <h1><a href="http://labs.thecssninja.com/bootleg/">bootleg.css</a></h1>
+                 <h2>A dodgy version of bootstrap plugins</h2>
+               </div>
+             </div>
+
+            <!-- Carousel -->
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Carousel</h1>
+                <iframe src="xray/carousel.html" width="700" height="380" frameborder="0"></iframe>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>There's a lot going on in this, so...</h1>
+              </div>
+            </div>
+            <!-- End: Carousel -->
+
+            <!-- Slideshowbob -->
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>This slide deck is powered by :checked</h1>
+                <img src="img/yodawg.jpg" width="400" height="258" />
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Introducing Slideshowbob</h1>
+                <h2>The Carousel and <a href="https://github.com/ryanseddon/slideshowbob">slideshowbob</a><br> work almost the same</h2>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Let's jump to the editor!</h1>
+                <p>Or go to github and checkout the <a href="https://github.com/ryanseddon/slideshowbob" target="_blank">source code</a>.</p>
+              </div>
+            </div>
+            <!-- End: Slideshowbob -->
+
+            <!-- Quirks -->
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Quirks &amp; Bugs</h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+               <div class="slideshowbob__slide__content">
+                 <h1>Labels and iOS5 requires empty onclick</h1>
+<div class="syntax"><pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">onclick=</span><span class="s">&quot;&quot;</span> <span class="na">for=</span><span class="s">&quot;foo&quot;</span><span class="nt">&gt;</span>I need an onclick in iOS<span class="nt">&lt;/label&gt;</span>
+</pre></div>
+              <p>&lt;=iOS5 will not update a checkboxes state when touching a label, but adding an onclick attribute works.</p>
+               </div>
+            </div>
+            <!-- End: Quirks -->
+
+            <!-- Downsides -->
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Downsides</h1>
+                <img src="img/its-a-hack.png" width="290" height="408" />
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Accessibility issues</h1>
+                <p>Confusing markup when consumed through a screenreader</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Sometimes* require specific placement of markup</h1>
+                <p>* and by sometimes I mean most of the time...</p>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Overly complex selectors</h1>
+                <p>Look at the Carousel CSS +/~ all over</p>
+              </div>
+            </div>
+            <!-- End: Downsides -->
+
+            <!-- Browser support -->
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Browser support</h1>
+                <a href="http://paulirish.deviantart.com/favourites/51528712" target="_blank"><img src="img/browser_ponies.png"></a>
+
+                <table>
+                    <tbody><tr>
+                        <th colspan="5">Basic:</th>
+                    </tr>
+                    <tr>
+                        <th>Firefox</th>
+                        <th>Chrome</th>
+                        <th>Opera</th>
+                        <th>Safari</th>
+                        <th>IE</th>
+                    </tr>
+                    <tr>
+                        <td>1+</td>
+                        <td>2+</td>
+                        <td>9.2+</td>
+                        <td>3.2+</td>
+                        <td>9+</td>
+                    </tr>
+                    <tr>
+                        <th colspan="5">Fancy:</th>
+                    </tr>
+                    <tr>
+                        <td>16+</td>
+                        <td>22+</td>
+                        <td>12+</td>
+                        <td>6+</td>
+                        <td>10+</td>
+                    </tr>
+                </tbody></table>
+              </div>
+            </div>
+            <!-- End: Browser support -->
+
+            <!-- Future -->
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Future, maybe...</h1>
+              </div>
+            </div>
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1><a href="http://www.xanthir.com/b4Kn0">A proposal</a> for toggability on any element</h1>
+<div class="syntax"><pre><span class="nf">#modal</span> <span class="p">{</span>
+    <span class="n">toggle</span><span class="o">-</span><span class="n">states</span><span class="o">:</span> <span class="m">2</span><span class="p">;</span> <span class="o">//</span> <span class="n">How</span> <span class="n">many</span> <span class="n">states</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">//</span> <span class="nt">An</span> <span class="nt">element</span> <span class="nt">with</span> <span class="nt">2</span> <span class="nt">or</span> <span class="nt">greater</span> <span class="nt">toggle</span> <span class="nt">states</span>
+<span class="o">//</span> <span class="nt">can</span> <span class="nt">react</span> <span class="nt">to</span> <span class="nt">the</span> <span class="nd">:checked</span> <span class="nt">pseudo-class</span>
+<span class="nf">#modal</span><span class="nd">:checked</span> <span class="p">{</span>
+    <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.modal-button</span> <span class="p">{</span>
+    <span class="n">toggle</span><span class="o">-</span><span class="n">share</span><span class="p">(</span><span class="m">#modal</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+              </div>
+            </div>
+            <!-- End: Future -->
+
+            <div class="slideshowbob__slide">
+              <div class="slideshowbob__slide__content">
+                <h1>Thanks!</h1>
+                <ul>
+                  <li>Slides: <a href="http://ryanseddon.github.io/stupid_things_with_checked-talk">ryanseddon.github.io/stupid_things_with_checked-talk</a></li>
+                  <li>Bootleg: <a href="https://github.com/ryanseddon/bootleg">github.com/ryanseddon/bootleg</a></li>
+                  <li>Slideshowbob: <a href="https://github.com/ryanseddon/slideshowbob">github.com/ryanseddon/slideshowbob</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- //End -->
+
+          <!--
+            Emmet.io new slide:
+            .slideshowbob__slide>.slideshowbob__slide__content>h1{Slide}
+          -->
+          <div class="slideshowbob__controls">
+            <label for="slideshowbob1"></label>
+            <label for="slideshowbob2"></label>
+            <label for="slideshowbob3"></label>
+            <label for="slideshowbob4"></label>
+            <label for="slideshowbob5"></label>
+            <label for="slideshowbob6"></label>
+            <label for="slideshowbob7"></label>
+            <label for="slideshowbob8"></label>
+            <label for="slideshowbob9"></label>
+            <label for="slideshowbob10"></label>
+            <label for="slideshowbob11"></label>
+            <label for="slideshowbob12"></label>
+            <label for="slideshowbob13"></label>
+            <label for="slideshowbob14"></label>
+            <label for="slideshowbob15"></label>
+            <label for="slideshowbob16"></label>
+            <label for="slideshowbob17"></label>
+            <label for="slideshowbob18"></label>
+            <label for="slideshowbob19"></label>
+            <label for="slideshowbob20"></label>
+            <label for="slideshowbob21"></label>
+            <label for="slideshowbob22"></label>
+            <label for="slideshowbob23"></label>
+            <label for="slideshowbob24"></label>
+            <label for="slideshowbob25"></label>
+            <label for="slideshowbob26"></label>
+            <label for="slideshowbob27"></label>
+            <label for="slideshowbob28"></label>
+            <label for="slideshowbob29"></label>
+            <label for="slideshowbob30"></label>
+            <label for="slideshowbob31"></label>
+            <label for="slideshowbob32"></label>
+            <label for="slideshowbob33"></label>
+          </div>
+
+          <div class="slideshowbob__progress"></div>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v4/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
+.slideshowbob {
+    font-family: $slide-font-family;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    color: #eee;
+    text-align: center;
+
+    h1, h2, h3, h4 {
+        margin: 0 0 20px 0;
+        color: #eee;
+        font-family: $slide-font-heading;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        text-transform: none;
+        text-shadow: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    pre {
+        text-align: left;
+    }
+
+    a {
+        color: $base-anchor-colour;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.slideshowbob__slide__content {
+    text-align: center;
+}

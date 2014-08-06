@@ -74,6 +74,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'csslint', 'sourcemappragma', 'cssmin']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'sourcemappragma', 'cssmin']);
 
 };
